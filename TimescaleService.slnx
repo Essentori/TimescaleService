@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TimescaleService/TimescaleService.csproj" />
+  <Project Path="TimescaleServiceTests/TimescaleServiceTests.csproj" />
+</Solution>
