@@ -92,10 +92,10 @@ namespace TimescaleService.Controllers
         [HttpGet("/values/{filename}/last10")]
         public async Task<IActionResult> GetLast10Values(string filename)
         {
-            if (!filename.Contains('.'))
-            {
-                return BadRequest(new { error = "Необходимо ввести расширешние файла." });
-            }
+            //if (!filename.Contains('.'))
+            //{
+            //    return BadRequest(new { error = "Необходимо ввести расширешние файла." });
+            //}
             var values = await context.Values
                                 .AsNoTracking()
                                 .Where(v => v.FileName == filename)
