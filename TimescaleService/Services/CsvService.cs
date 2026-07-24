@@ -89,7 +89,7 @@ namespace TimescaleService.Services
                     if (!dateIsValid)
                     {
                         return ThrowError($"Ошибка в строке {lineCount}: " +
-                            $"Некорректный формат даты '{date}' (требуемый формат: ГГГГ-ММ-ДДTчч-мм-сс.мммм).");
+                            $"Некорректный формат даты '{date}' (требуемый формат: ГГГГ-ММ-ДДTчч-мм-сс.ммммZ).");
                     }
                     if (dateValue < minDate_validation || dateValue > maxDate_validation)
                     {
